@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE beans PUBLIC "-//SPRING//DTD BEAN//EN" "http://www.springframework.org/dtd/spring-beans.dtd">
+
+<beans default-autowire="byName" default-lazy-init="false" default-dependency-check="none">
+	<bean id="ratingController" class="com.seeyon.v3x.plugin.rating.RatingController">
+	</bean>
+	<bean id="ratingConfigController" class="com.seeyon.v3x.plugin.rating.RatingConfigController">
+	</bean>
+	<bean id="ratingManagerController" class="com.seeyon.v3x.plugin.rating.RatingManagerController">
+	</bean>
+</beans>

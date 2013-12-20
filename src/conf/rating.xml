@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE beans PUBLIC "-//SPRING//DTD BEAN//EN" "http://www.springframework.org/dtd/spring-beans.dtd">
+
+<beans default-autowire="byName">
+	<bean id="ratingDefinition" class="com.seeyon.v3x.plugin.rating.RatingDefintion">
+		<property name="id" value="ratingPlugin" />
+		<property name="name" value="rating" />
+		<property name="contextConfigLocation">
+			<list>
+				<value>classpath*:ratingController.xml</value>
+			</list>
+		</property>
+		
+		<!-- 前台请求action的配置映射 --> 
+		 
+		<property name="urlMapping">
+			<props>
+				<prop key="/rating.do">ratingController</prop>
+				<prop key="/ratingconfig.do">ratingConfigController</prop>
+				<prop key="/ratingmanager.do">ratingManagerController</prop>
+			</props>
+		</property>
+	</bean>
+</beans>

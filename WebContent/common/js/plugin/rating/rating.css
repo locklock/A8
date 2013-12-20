@@ -1,0 +1,17 @@
+.commit{
+	
+	color:black;
+	font:18px solid;
+	font-weight:bold;
+}
+.label{
+	color:black;
+	margin-right:15px;
+	font:16px solid;
+	
+}
+.split{
+	width:100%;
+	height:1px;
+	margin-bottom: 1px;
+}

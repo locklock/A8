@@ -1,0 +1,41 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!DOCTYPE hibernate-mapping
+	PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" 
+	"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping package="com.seeyon.v3x.plugin.rating.model">
+		<class name="RatingItem" table="seeyon_v3x_plugin_rating_RatingItem">
+			<id name="id" column="id">
+				<generator class="increment"/>
+			</id>
+			<property name="itemName" />
+			<property name="itemId" />
+			<property name="section" />
+			<property name="maxScore" />
+			<property name="defaultScore" />
+			<property name="procId" />
+		</class>
+		<class name="RatingUserResult" table="seeyon_v3x_plugin_rating_RatingUserResult">
+			<id name="id" column="id">
+				<generator class="increment"/>
+			</id>
+			<property name="userId" />
+			<property name="userName" />
+			<property name="procId" />
+			<property name="ratingItem" />
+			<property name="score" />
+			<property name="comment" />
+			<property name="instanceId" />
+			<property name="instanceName" />
+			<property name="time" />
+			<property name="weight" />
+		</class>
+		<class name="RatingUserWeight" table="seeyon_v3x_plugin_rating_RatingUserWeight">
+			<id name="id" column="id">
+				<generator class="increment"/>
+			</id>
+			<property name="userId" />
+			<property name="procId" />
+			<property name="weight" />
+			
+		</class>
+	</hibernate-mapping>

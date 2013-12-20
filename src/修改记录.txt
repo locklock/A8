@@ -1,0 +1,2 @@
+1.controller a .新增 getWeight方法 待验证
+             b. 修改saveWeight方法 （update情况）
